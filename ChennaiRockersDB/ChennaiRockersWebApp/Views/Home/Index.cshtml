@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .linkStyle{
+        margin:1%;
+        font-size:18px;
+        font-weight:bold;
+    }
+</style>
+
+<div class="linkStyle">
+    @Html.ActionLink("List of Upcoming Games", "Index", "Games")<br />
+    @Html.ActionLink("List of Past Games", "pastIndex", "Games")<br />
+    @Html.ActionLink("List of Team Members", "Index", "TeamMembers")
+
+</div>

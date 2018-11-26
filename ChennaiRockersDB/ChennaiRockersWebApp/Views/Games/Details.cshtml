@@ -1,0 +1,50 @@
+﻿@model ChennaiRockersWebApp.Models.Game
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Game</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GameDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Venue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Venue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.courtFees)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.courtFees)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeamMember.MemberName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeamMember.MemberName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GameId }) |
+    @Html.ActionLink("Back to List", "pastIndex")
+</p>
